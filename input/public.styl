@@ -48,6 +48,7 @@ background:rgba(255,255,255,.8);
 		.text
 			width 400px
 			height 80px
+			border-radius 5px
 		.submit
 			margin-left 15px
 			margin-top 0
@@ -57,6 +58,12 @@ background:rgba(255,255,255,.8);
 	input
 		border none
 		outline none
+		transition 0.3s
+		&:focus
+			box-shadow 0 0 10px #a0a0a0
+			&::placeholder
+				transition 0.3s
+				color transparent
 	.text
 		width 480px
 		height 86px
@@ -67,7 +74,7 @@ background:rgba(255,255,255,.8);
 		line-height 46px
 		text-align center
 		box-sizing border-box
-		border-radius 5px
+		border-radius 43px
 		&::placeholder
 			font-family 'micrsoft yahei'
 	.submit
@@ -135,5 +142,9 @@ background:rgba(255,255,255,.8);
 				width 55px
 			.w53
 				width 53px
+		.fwb
+			font-weight bold
 		.underline
 			text-decoration underline
+		.not-allowed
+			cursor not-allowed
